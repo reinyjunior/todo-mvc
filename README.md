@@ -1,6 +1,5 @@
 Todo MVC
 ========
-Basic todo MVC javascript sample project
   * Use localStorage to persist data
   * Testing with QUnit
 
