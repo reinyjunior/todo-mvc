@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Todo Tests</title>
+	<link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.14.0.css">
+</head>
+<body>
+	<div id="qunit"></div>
+	<div id="qunit-fixture">
+		<div class="container">
+			<input type="text" id="task-field" placeholder="Add your tasks here !">
+			<ul id="task-container">
+			</ul>
+			<div id="task-footer">
+				<span>Tasks:</span>
+				<small id="task-counter"></small>
+			</div>
+		</div>
+		<template id="task-template">
+			<li>
+				<div>{{title}}</div>
+				<a href="#" class="delete" id="{{id}}">X</a>
+			</li>
+		</template>
+	</div>
+	<script src="http://code.jquery.com/qunit/qunit-1.14.0.js"></script>
+	<script src="../javascripts/controller.js"></script>
+	<script src="../javascripts/helpers.js"></script>
+	<script src="../javascripts/model.js"></script>
+	<script src="../javascripts/view.js"></script>
+	<script src="../javascripts/storage.js"></script>
+	<script src="tests.js"></script>
+</body>
+</html>
