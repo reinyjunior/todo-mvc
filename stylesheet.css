@@ -12,14 +12,14 @@ a { text-decoration: none; }
 
 a:hover { color: red; }
 
-body { background-color: #e8e8e8; }
+body { background-color: #E8E8E8; }
 
 .container {
 	background-color: #FFFFFF;
 	border:1px solid #B5B5B5;
 	margin: 20px auto;
 	position: relative;
-	width: 900px;
+	max-width: 900px;
 }
 
 .container::after {
@@ -32,7 +32,7 @@ body { background-color: #e8e8e8; }
 	width: 0px;
 }
 
-.container::before {
+/*.container::before {
 	background: white;
 	border: 1px solid #B5B5B5;
 	bottom: -4px;
@@ -44,7 +44,7 @@ body { background-color: #e8e8e8; }
 	width: 890px;
 	z-index: -1;
 }
-
+*/
 input {
 	border: 0;
 	font-size: 20px;
